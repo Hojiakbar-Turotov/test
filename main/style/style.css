@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.d-none {
+  display: none !important;
+}
+
+#login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 30px 10px;
+  user-select: none;
+  min-width: 300px;
+}
+#login .p {
+  font-size: 25px;
+  font-weight: 800;
+  cursor: default;
+}
+#login .btn, #login .btns {
+  background-color: #0000ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+#login label {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10px;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+#login input {
+  display: block;
+  width: calc(100% - 10px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  font-size: 20px;
+  border-width: 4px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: groove;
+  border-radius: 13px;
+  box-shadow: 16px 5px 9px #4242427d;
+}
+#login .btns {
+  font-size: 20px;
+}
+#login .btns:nth-child(2n+1) {
+  background: none;
+  color: #0000ff;
+}
+
+#preloader {
+  user-select: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  animation-name: preloader;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+}
+
+@keyframes preloader {
+  0% {
+    background-color: #000;
+    color: #fff;
+    text-shadow: 200px 40px #ffffff88;
+  }
+  50% {
+    background-color: #fff;
+    color: #000;
+    text-shadow: -200px 40px #00000088;
+  }
+  100% {
+    background-color: #000;
+    color: #fff;
+    text-shadow: 200px 40px #ffffff88;
+  }
+}
+header {
+  user-select: none;
+  position: relative;
+  width: 100%;
+}
+header .savol {
+  display: none;
+}
+header .savol.active {
+  display: block;
+  position: absolute;
+  top: 20px;
+  width: 80%;
+}
+header .savol.active .ques {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+header .savol.active .ques .question {
+  width: 90%;
+  height: 70px;
+  background: #38bff2;
+  border-radius: 82px;
+  font-size: 30px;
+  padding-top: 18px;
+  text-align: center;
+}
+header .savol.active .ques .anws {
+  display: flex;
+  height: 50px;
+  width: 90%;
+  border-radius: 82px;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+header .savol.active .ques .anws:hover {
+  background-color: #0707f3aa;
+}
+header .savol.active .ques .anws input {
+  margin-right: 10px;
+}
+header .savol.active .ques .anws label {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */
